@@ -22,10 +22,7 @@ for i in range(num_records):
     transaction_timestamp = fake.date_time_between(start_date='-1y', end_date='now')
     
     # Generate region
-    region = np.random.choice(['Europe (UK)', 'Europe (Germany)', 'Europe (Sweden)', 'Europe (Ireland)',
-                              'South America (Mexico)', 'South America (Brazil)',
-                              'Africa (Nigeria)', 'Africa (South Africa)', 'Africa (Kenya)', 'Africa (Ghana)',
-                              'North America (USA)', 'North America (Canada)'])
+    region = np.random.choice(['Europe', 'South America', 'Africa','North America'])
     
     # Generate state based on the region
     if 'Europe' in region:
